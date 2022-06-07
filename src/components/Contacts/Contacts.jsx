@@ -7,7 +7,7 @@ const Contacts = ({ contacts, filter, filteredContacts, deleteContact }) => {
     <ul className={styles.contactsList}>
       {rendered.map(({ name, id, number }) => (
         <li className={styles.listItem} key={id} id={id}>
-          <span className={styles.contactName}>{name}: </span>
+          <span className={styles.contactName}>{name} </span>
           <span className={styles.phoneNumber}>{number}</span>
 
           <button
